@@ -1,5 +1,13 @@
 # Passing Functions as Props
 
+## FreeHand
+
+- [Module One Whiteboard](https://ryangallaway792749.invisionapp.com/freehand/301d82--Module-One-UYMzWH3LR?dsid_h=6a5375f02b2dcae8071421eac38e242091f7e15362770815d8bbdc1441a1c2ec&uid_h=cbbb57444f578b18334d6da7da4326ffef2a73ddf9d3e7cb64238df31b3b81d0)
+
+## Repl
+
+- [Filter Array Method](https://replit.com/@rkgallaway/301d82-filter#index.js)
+
 ## Overview
 
 Yesterday, you learned how to pass information from a parent component into a child component through `props`. Today, we are going to pass functions through the `props` as well. We are also going to display a nested component using `.map` rather than hard-coding each one individually.
