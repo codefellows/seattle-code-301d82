@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Function Currying</title>
+</head>
+<body>
+  <H1>
+    Higher Order Functions
+  </H1>
+
+  <h3>Consider the following</h3>
+  <pre class="line-numbers">
+    <code class="language-css">
+      function greaterThan(n) {
+        return m => m > n;
+      }
+      let greaterThan10 = greaterThan(10);
+      console.log(greaterThan10(11));
+      // expected output → true
+
+      // this could also be written as
+      greaterThan(10)(11);
+      // expected output → true
+    </code>
+ </pre>
+
+ <h3>
+   Relevant and Related Functional Programming Terms:
+ </h3>
+ <ul>
+   <li>Closures</li>
+   <li>Currying</li>
+   <li>Partial Application</li>
+ </ul>
+
+ <h4>Open the developers console and interact with the JavaScript in app.js to learn more</h4>
+ <h4>The <code>greaterThan</code> function relies on javascript closures and is referred to as currying</h4>
+  
+  
+  <script src="app.js"></script>
+</body>
+</html>
