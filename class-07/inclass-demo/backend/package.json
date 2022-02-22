@@ -1,0 +1,24 @@
+{
+  "name": "pets-images-api",
+  "version": "1.0.0",
+  "description": "Demo for building a server for class 301d82",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rkgallaway/pets-images-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rkgallaway/pets-images-api/issues"
+  },
+  "homepage": "https://github.com/rkgallaway/pets-images-api#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3"
+  }
+}
