@@ -21,6 +21,8 @@ const cors = require('cors');
 app.use(cors());
 
 // above is a basic server --------------------------------
+
+
 let data = require('./data/pets.json');
 
 
@@ -49,20 +51,25 @@ app.get('/pet', (request, response) => {
     // see results in TERMINAL
     // console.log(species);
   
-    let petObject = da.find(pet => pet.species === species);
+    // this next line of code works,
+    // comment line below OUT and comment IN the following line below to trigger server error handling
+    let petObject = data.find(pet => pet.species === species);
+
+    // this next line of code contains an error,
+    // comment line below IN and comment the line above OUT to trigger server error handling
+    // let petObject = da.find(pet => pet.species === species);
+    
     let selectedPet = new Pet(petObject);
     // proof of life, see in TERMINAL
     // console.log(selectedPet);
   
     response.send(selectedPet);
   } catch (error){
-    // if I have an error, I am going to instatiate a new Error instance (error object)
+
+    // if I have an error, I am going to instatiate a new Error instance
     // just do this!
-    // throw new Error
-
-
-    // not usually a thing but could.  either throw OR the inline code below.  note express prefers throw and let middleware handle error
-    response.status(500).send('something went wrong');
+    // fixed after class, notice that we must enter a string message to instantiate a new Error
+    throw new Error ('Species Unavailable')
   }
 })
 
@@ -72,7 +79,12 @@ app.get('*', (request, response) => {
   response.send('Not sure what you\'re looking for, but taht route doesn\'t exist');
 })
 
+// Error Handling middleware, must be the LAST middleware, with catch-all being very last.
+// I know this is middleware because of app.use
+// the call back must be an error handler.  
+// this is a catch-all error handler
 app.use( (error, request, response, next) => {
+  console.log(error.message);
   response.status(500).send(error.message)
 })
 

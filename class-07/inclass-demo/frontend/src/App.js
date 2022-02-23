@@ -6,7 +6,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       species: '',
-      petData: {}
+      petData: {},
     }
   }
 
@@ -29,7 +29,11 @@ class App extends React.Component {
         showPet: true
       })
     }catch(error){
-      console.error(error);
+      // console.error(error);
+      this.setState({
+        error: true,
+        errorMessage: `An Error Occurred: ${error.response.status}, ${error.response.data}`
+      })
     }
   }
 
@@ -43,8 +47,12 @@ class App extends React.Component {
           <button >Display Pet</button>
         </form>
         {
-          this.state.showPet &&  <p>{this.state.petData.name} is a {this.state.petData.breed}</p>
+          this.state.showPet &&
+          <p>{this.state.petData.name} is a {this.state.petData.breed}</p>
         }
+
+          <p>{this.state.errorMessage}</p>
+
       </>
 
     );
