@@ -6,7 +6,7 @@
 
 ## Repl
 
-- [coming soon](xyc.com)
+- [Regex Part 1](https://replit.com/@rkgallaway/301d82-regex-part-1#index.js)
 
 ## Overview
 
