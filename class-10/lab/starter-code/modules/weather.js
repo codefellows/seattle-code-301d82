@@ -15,7 +15,7 @@ function getWeather(latitude, longitude) {
     cache[key] = {};
     cache[key].timestamp = Date.now();
     cache[key].data = axios.get(url)
-    .then(response => parseWeather(response.body));
+    .then(response => parseWeather(response.data));
   }
   
   return cache[key].data;
