@@ -5,7 +5,9 @@ Read through this code as if you are the interpreter. Find all of the mistakes i
 ## server.js
 
 ```js
-const express = require(express);
+
+const express = require('express');
+const app = express();
 
 app.get('username', req, res => {
   const userInfo = {};
