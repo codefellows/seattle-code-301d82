@@ -1,5 +1,16 @@
 # Mongo, Mongoose and Data Modeling
 
+## Learning Objectives
+
+
+## Freehand
+
+- [Module 3 - Can of Books](https://ryangallaway792749.invisionapp.com/freehand/301d82----CanOfBooks---Module-Three-IPg8iMM5q?dsid_h=1eaed603b8b7a44a3f8fefe70d4700a1919ead9e50a550a5c2999406da2cb6ba&uid_h=cbbb57444f578b18334d6da7da4326ffef2a73ddf9d3e7cb64238df31b3b81d0)
+
+## Repl
+
+- [Chaining Methods](https://replit.com/@rkgallaway/301d82-chaining#index.js)
+
 ## Overview
 
 Today is the first day of our new project, a mobile-only book collection. You will be gradually working towards a full-scale application, complete with an express server, persistence in a Mongo database, authentication, and the ability to view, add, update and delete books from your React front end.
@@ -16,16 +27,6 @@ To start, we will introduce Mongodb and Mongoose. We will create data models and
 - Code Demo
 - Lab Preview
 
-## Learning Objectives
-
-
-## Freehand
-
-- [Module 3 - Can of Books](https://ryangallaway792749.invisionapp.com/freehand/301d82----CanOfBooks---Module-Three-IPg8iMM5q?dsid_h=1eaed603b8b7a44a3f8fefe70d4700a1919ead9e50a550a5c2999406da2cb6ba&uid_h=cbbb57444f578b18334d6da7da4326ffef2a73ddf9d3e7cb64238df31b3b81d0)
-
-## Repl
-
-- [Chaining Methods](https://replit.com/@rkgallaway/301d82-chaining#index.js)
 
 As a result of completing lecture 11 of Code 301, students will:
 
